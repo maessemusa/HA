@@ -1,0 +1,118 @@
+Basado en los extractos del manual de reglas proporcionados y aplicando todas las modificaciones solicitadas, a continuación se presenta la versión revisada de las reglas de *Protocolo de Crisis: El Alta Final*.
+
+***
+
+## 🏥 PROTOCOLO DE CRISIS: EL ALTA FINAL
+
+**Manual de Reglas (Versión Modificada y Consolidada)**
+
+### 1. INTRODUCCIÓN
+
+En Protocolo de Crisis, asumes el rol de **Director de un Hospital** al borde del colapso [1]. Tu objetivo es gestionar tu personal, presupuesto e infraestructura para curar pacientes y darles el alta antes de que fallezcan por falta de atención [1]. Deberás equilibrar la salud de tus pacientes con el estrés de tu equipo, mientras te defiendes de crisis externas y sabotajes del hospital rival [1].
+
+### 2. OBJETIVO DEL JUEGO
+
+El juego termina inmediatamente si se cumple una de las dos condiciones [2]:
+
+*   **Victoria por Excelencia:** Eres el primer jugador en acumular **20 Puntos de Alta (PA)** [2].
+*   **Victoria por Eliminación:** La **Reputación (RP)** de tu oponente llega a **0** [2].
+
+### 3. COMPONENTES Y RECURSOS
+
+#### Recursos Globales
+
+*   **Presupuesto ($):** La moneda del juego. Se utiliza para jugar cartas y pagar costes de activación [2]. Se acumula entre turnos [2].
+*   **Puntos de Alta (PA):** Se ganan al curar pacientes [2]. Se usan para ganar la partida y para pagar Habilidades Épicas de los Jefes [2].
+*   **Reputación (RP):** La "vida" del jugador [3]. Comienzas con 10 RP [3]. Pierdes RP cuando mueren pacientes o por cartas de Crisis [3].
+
+#### Contadores y Fichas
+
+El juego utiliza diferentes contadores y fichas para rastrear el progreso y las penalizaciones: PC (Puntos de Curación) [3], EST (Estrés) [3], DET (Deterioro) [3], INF (Infección) [4], DOS (Dosis) [4] y BLOQ (Bloqueo) [4].
+
+### 4. PREPARACIÓN DE LA PARTIDA
+
+1.  **Mazos:** Cada jugador baraja su **mazo del jugador** (Personal, Equipos, Sectores) [4]. Las cartas de Eventos o Crisis están en el **mazo de eventos**. El mazo de Pacientes se baraja y se coloca al centro (Zona Neutral) [4].
+2.  **Recursos Iniciales:** Cada jugador comienza con **10 RP** y **$2 de Presupuesto** [4].
+3.  **Mano Inicial:** Roba 7 cartas de tu mazo del jugador [4]. No hay límite máximo de cartas en mano.
+4.  **Guardia Inicial:** Revela las primeras 2 cartas del mazo de Pacientes y colócalas en tu zona de Guardia (tu área de juego frente a ti) [5].
+5.  **Zona de Juego:** Define espacio para tu Guardia (donde están los pacientes generales) y espacio para tus Sectores (Infraestructura) [5].
+
+### 5. CONCEPTOS CLAVE Y MECÁNICAS
+
+#### A. La Salud del Paciente (GRV vs PC vs DET)
+
+Cada carta de Paciente tiene un valor de Gravedad (GRV) impreso y un Límite de Deterioro (Límite DET) [5]. Cada carta de paciente también tiene el valor de **Puntos de Alta (PA)** que otorga al ser curado [6].
+
+*   **Para dar el Alta:** Debes acumular fichas de PC sobre el paciente. Si **PC $\ge$ GRV**, el paciente se va a casa y Ganas los PA indicados [5, 7].
+*   **Pacientes Críticos:** Son aquellos con **GRV > 5** [8].
+
+#### B. El Estrés (EST) y la Resistencia (RES)
+
+**En el Personal:**
+
+*   Cada carta de personal tiene un valor de Resistencia (RES) [9].
+*   Cada vez que un personal usa una Habilidad o Cura, recibe **1 EST** [9].
+*   **Burnout:** Si la cantidad de fichas **EST es igual a RES**, la carta de personal se descarta inmediatamente [9].
+
+**En el Paciente (El Escudo de Estrés):**
+
+*   El Estrés en un paciente **impide la curación** [9].
+*   Al intentar CURAR a un paciente con EST, cada punto de curación debe usarse primero para QUITAR EST. Solo cuando no queda EST se pueden colocar fichas de PC [9, 10].
+
+#### C. Infección (INF)
+
+*   Por cada ficha de INF que tenga un paciente, el coste de Presupuesto ($) para realizar una acción de **CURAR** sobre él **aumenta en +$1** [11].
+
+#### D. Sectores (Infraestructura)
+
+*   Puedes tener **máximo 4 Sectores** en juego [11].
+*   **Capacidad:** **Algunos sectores tienen capacidad** [11]. Si se indica, el Sector puede alojar **1 Paciente y 1 Personal** (anexados a la carta) [11].
+*   **Bloqueo (BLOQ):** Si un sector tiene 1 o más BLOQ, sus efectos se anulan. Si llega a **3 BLOQ**, el sector se destruye [11].
+
+### 6. SECUENCIA DE TURNO
+
+Cada turno consta de 3 Fases [12]:
+
+#### FASE 1: CAMBIO DE GUARDIA (Mantenimiento)
+
+1.  **Ingresos (Presupuesto):** GANA **$5** de Presupuesto base [12]. Suma cualquier bonificación por efectos pasivos [12].
+2.  **Robo:** Roba 1 carta de tu mazo del jugador [12].
+3.  **Triage (Admisión):** Si tienes 2 o menos pacientes en total (sumando Guardia y Sectores), revela cartas del mazo de Pacientes y agrégalas a tu Guardia hasta tener 3 [12].
+4.  **Mazo de Eventos:** Si es tu segundo turno o posterior, revela la primera carta del mazo de eventos. Si tiene un objetivo (como una Crisis), tu oponente decide el objetivo.
+
+#### FASE 2: ACCIÓN
+
+En esta fase puedes realizar tantas acciones como tu Presupuesto ($) y Personal permitan.
+
+El orden de las primeras acciones es estricto:
+
+1.  **Mover Personal:** Puedes mover un Personal de la Guardia a un Sector vacío (o viceversa) [13].
+2.  **Rotación y Descanso:** Si un Personal en tu Guardia o Sector decide no usar ninguna Habilidad o no CURAR durante esta fase, puedes asignarle la acción de **Descanso** (Coste $0$). Si lo haces, **QUITA 2 EST** de ese Personal
+
+Luego, puedes realizar el resto de las acciones en cualquier orden:
+
+*   **Jugar Cartas:** Paga el coste ($) para ponerlas en juego (Personal, Equipos/Fármacos, Sectores) [13].
+*   **Usar Habilidad Activa/Sector:** Paga el coste monetario (si tiene) [10] y **PON 1 EST** sobre el Personal que usó la habilidad [8, 10].
+*   **CURAR (Acción de Curación):** PAGA **$1** (+$1 extra por cada ficha de INF) [10]. **PON 1 EST** sobre el Personal que cura [10]. Aplica PC, quitando EST primero del paciente si lo tiene [10]. Cada miembro del personal solo puede CURAR una vez por turno sobre un mismo paciente [10].
+*   **Habilidades Épicas (Jefes):** Paga el coste en PA y **PON 1 EST** para activar su efecto
+
+**Regla de Sobrecarga:**
+
+La Guardia tiene capacidad de **5 Pacientes** [14]. Si debes ingresar un 6º paciente (o más), colócalo en la pila de Sobrecarga [14].
+
+*   **Penalización:** Mientras tengas pacientes en Sobrecarga, el coste base de cualquier cura **aumenta en $1** [14].
+
+#### FASE 3: RESOLUCIÓN DE ALTAS
+
+1.  **Deterioro de Pacientes y Chequeo de Muerte:**
+    *   PON 1 DET a todos los pacientes. Si el paciente es Crítico (GRV > 5), PON 2 DET en su lugar [8, 12].
+    *   Si **DET $\ge$ Límite DET**, el paciente fallece, descártalo y **PIERDES 1 RP** [9, 12].
+2.  **Verificar Altas:** Revisa todos tus pacientes [7]. Si **PC $\ge$ GRV** [7]:
+    *   El paciente recibe el Alta (descártalo a la pila de descartes de Pacientes) [7].
+    *   GANA los PA indicados en la carta [7]. Si esto te lleva a 20 PA, ¡ganas inmediatamente! [7].
+3.  **Reordenar:** Si tienes espacios libres en tu Guardia (menos de 5) y tienes pacientes en la pila de Sobrecarga, muévelos inmediatamente a la Guardia [7].
+
+### 7. DETALLES ADICIONALES
+
+*   **Fármacos:** Entran con fichas de DOSIS (DOS) [15]. Usar el fármaco no cuesta Presupuesto ni Estrés al personal, solo se gasta **1 ficha de DOS** [15]. Cuando se queda sin dosis, el fármaco se descarta [15].
+*   **Turno Extra:** Permite realizar una segunda acción de Curar o Habilidad en el mismo turno (recibiendo su correspondiente ficha de EST adicional) [8]. Retira la ficha de Turno Extra al usarla [8].
